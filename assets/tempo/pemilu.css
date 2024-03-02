@@ -1,0 +1,709 @@
+.pemilustylone p.title {
+	color: #424242 !important;
+	font-family: Open Sans;
+	font-size: 14px !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	line-height: 150% !important;
+}
+
+.pemilustylone p.titleutama {
+	color: #212121;
+	font-family: Open Sans;
+	font-size: 18px !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	line-height: 29px !important;
+	margin-top: 0px !important;
+}
+
+.pemilustylone p.date {
+	margin-top: 8px !important;
+}
+
+.card-pemilu {
+	background: #FFFFFF;
+	border-radius: 2px;
+	padding: 16px 0px 0px;
+	position: relative;
+}
+
+.title-card-pemilu {
+	background: #AD120A;
+	border-radius: 0px 40px 40px 0px;
+	width: fit-content;
+	padding: 8px 16px;
+	margin-bottom: 16px;
+}
+
+.title-card-pemilu p {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+
+.berita-terbaru-card-pemilu {
+	padding: 0px 16px;
+}
+
+.blockbox-pemilu {
+	border-radius: 2px;
+	border: 1px solid #EEE;
+	background: #FCFCFC;
+}
+
+.banding-pemilu {
+	position: absolute;
+	right: 15px;
+	top: 25px;
+}
+
+.banding-pemilu a {
+	color: var(--primary-main, #AD120A);
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px;
+	border-radius: 2px;
+	border: 1px solid var(--primary-main, #AD120A);
+	background: var(--neutral-100, #FFF);
+	padding: 8px 12px;
+}
+
+.berita-terbaru-card-pemilu p.desc {
+	color: var(--neutral-1000, #616161);
+	font-family: Open Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	margin-bottom: 16px;
+}
+
+.berita-terbaru-card-pemilu .list-tiga-kolom p.title {
+	color: var(--neutral-1200, #212121);
+	font-family: Open Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	margin-bottom: 12px;
+}
+
+.berita-terbaru-card-pemilu .list-tiga-kolom p.desc-in {
+	overflow: hidden;
+	color: var(--neutral-1100, #424242);
+	text-overflow: ellipsis;
+	whitespace: nowrap;
+	font-family: Open Sans;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+.berita-terbaru-card-pemilu .list-tiga-kolom p.date {
+	color: var(--neutral-1000, #616161);
+	font-family: Open Sans;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	margin-top: 0px;
+}
+
+.title-card-pemilu p svg {
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.panduanpemilu figure {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 263px;
+	height: 280px;
+}
+
+.panduanpemilu ul {
+	padding-inline-start: 22px;
+	margin: 0px;
+}
+
+.panduanpemilu ul li p {
+	color: #212121 !important;
+	font-family: 'Open Sans';
+	font-size: 14px !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	line-height: 21px !important;
+}
+
+.pemilustyletwo .img-card {
+	width: 185px !important;
+	height: 104px !important;
+}
+
+.terpopuler-card-pemilu-kalender .slick-dots {
+	bottom: inherit;
+	top: 220px;
+	background: transparent;
+	height: 30px;
+	position: absolute;
+}
+
+.terpopuler-card-pemilu .slick-prev {
+	display: none !important;
+}
+
+.terpopuler-card-pemilu .slick-next {
+	display: none !important;
+}
+
+.terpopuler-card-pemilu p.one {
+	color: #212121;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	margin-bottom: 16px;
+	padding: 0px 16px;
+}
+
+.terpopuler-card-pemilu p.two {
+	color: #AD120A;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	margin-bottom: 12px;
+	padding: 0px 16px;
+}
+
+.terpopuler-card-pemilu p.three {
+	color: #424242;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	margin-bottom: 12px;
+	padding: 0px 16px;
+}
+
+.terpopuler-card-pemilu p.four {
+	color: var(--neutral-1200, #212121);
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	margin-bottom: 16px;
+}
+
+.terpopuler-card-pemilu .slick-dots li.slick-active button:before {
+	color: #AD120A;
+	content: '\f111';
+}
+
+.terpopuler-card-pemilu-kalender {
+	min-height: 250px;
+}
+
+.terpopuler-card-pemilu-suara {
+	min-height: 150px;
+	padding: 0px 16px;
+}
+
+.terpopuler-card-pemilu-suara a {
+	color: #AD120A;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px;
+	border-radius: 2px;
+	border: 1px solid #AD120A;
+	background: #FFF;
+	padding: 8px 12px;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.terpopuler-card-pemilu-suara .slick-dots {
+	bottom: inherit;
+	top: 120px;
+	background: transparent;
+	height: 30px;
+	position: absolute;
+}
+
+.bg-border-pemilu {
+	border-radius: 2px;
+	border: 1px solid var(--neutral-500, #EEE);
+	background: #FFF;
+}
+
+.bg-side-suara-pemilu {
+	background: url('../banner/bg-pemilu.png');
+	background-size: cover;
+}
+
+.bg-trans {
+	background: transparent !important	;
+}
+
+.n-header-in-pemilu:before {
+	content: url('../images/header-pemilu-before.svg');
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.n-header-in-pemilu:after {
+	content: url('../images/header-pemilu-after.svg');
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.n-header-in-pemilu .logo {
+	margin-top: -10px;
+}
+
+
+.paslon-daftar .slick-dots { bottom: 0px; }
+
+.paslon-daftar { position: relative; padding: 0px 24px 24px; }
+
+.daftarisi_paslon_inner { display: flex; border-radius: var(--Default, 2px) var(--Default, 2px) 0px 0px; border: 1px solid var(--primary-border, #E4B0AD); background: var(--crimson-red-surface, #FFF6F6); padding: 8px 16px; }
+.daftarisi_paslon_inner .text-right { text-align: right; }
+.daftarisi_paslon_inner p { flex: 1 1 auto!important; color: var(--primary-main, #AD120A); font-family: 'Open Sans'; font-size: 12px; font-style: normal; font-weight: 700; line-height: 150%;}
+
+.daftarisi_paslon_versi p { color: var(--neutral-1200, #212121); font-family: Open Sans; font-size: 12px; font-style: normal; font-weight: 600; line-height: 150%; }
+
+.daftarisi_paslon_versi { border-bottom: 1px solid var(--neutral-500, #EEE); background: var(--neutral-100, #FFF); text-align: center; padding: 8px; }
+
+.hasil_perolehan_paslon p { color: var(--neutral-1000, #616161); text-align: right; font-family: Open Sans; font-size: 32px; font-style: normal; font-weight: 700; line-height: 120%; margin-top: 5px; padding: 0px 10px;}
+
+.hasil_perolehan_paslon { display: flex; margin-top: 8px; }
+
+.hasil_perolehan_paslon div { flex: 1 1 auto!important; }
+
+.hasil_perolehan_paslon img { text-align: center; margin: auto; }
+
+.hasil_perolehan_paslon div:first-child p { text-align: left; }
+
+.paslon-daftar .card-box { padding: 0px 8px; }
+
+.daftarisi_paslon { border-radius: 0px 0px var(--Default, 2px) var(--Default, 2px); border: 1px solid var(--neutral-500, #EEE); background: var(--neutral-100, #FFF); }
+
+.card-footer { padding: 8px; }
+
+.card-footer p { color: var(--neutral-1000, #616161); text-align: right; font-family: Open Sans; font-size: 10px; font-style: normal; font-weight: 400; line-height: 150%; }
+
+.bandingstyleone p { color: #616161; font-family: Open Sans; font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; }
+
+.list-paslon { display: flex; }
+
+.list-paslon .isi-card {
+	flex: 1 1 auto!important;
+/*	margin-right: 16px;*/
+	margin-right: 12px;
+	border-radius: 2px;
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+}
+.list-paslon .isi-card:last-child { margin-right: 0px;}
+
+.nomorcalon { border: 1px solid var(--neutral-100, #FFF); background: var(--neutral-1200, #212121); padding: 10px; text-align: center; }
+
+.nomorcalon p { color: var(--neutral-100, #FFF); font-family: Open Sans; font-size: 16px; font-style: normal; font-weight: 800; line-height: 150%; }
+
+.list-paslon p.title { color: var(--neutral-1200, #212121); font-family: Open Sans; font-size: 14px; font-style: normal; font-weight: 700; line-height: 150%; margin-bottom: 4px; }
+
+.list-paslon p.desc { color: var(--neutral-1000, #616161); font-family: Open Sans; font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; margin-bottom: 16px; }
+
+ul.partai-pendukung {
+	padding-inline-start: 0px;
+}
+
+ul.partai-pendukung li {
+	display: inline-block;
+	margin-right: 16px;
+}
+
+ul.partai-pendukung li:last-child {
+	margin-right: 0px;
+}
+
+ul.partai-pendukung li img { height: 32px; width: auto; }
+
+.list-paslon .card-body { padding: 16px; }
+
+.list-paslon p.tampilkanberita {
+	color: var(--neutral-1000, #616161);
+	font-family: Open Sans;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.list-paslon p.tampilkanberita strong {
+	color: var(--neutral-1000, #616161);
+	font-family: Open Sans;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+}
+
+.janjipolitikpaslon figure.img-card {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.janjipolitikpaslon figure.img-card img {
+	position: absolute;
+	height: 100% !important;
+	width: auto !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.janjipolitikpaslon p.title {
+	color: #212121 !important;
+	font-family: Open Sans;
+	font-size: 16px !important;
+	font-style: normal;
+	font-weight: 600 !important;
+	line-height: 150% !important;
+}
+
+.content-pagination {
+	padding: 12px 16px;
+	border-radius: 2px;
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+	margin: 36px 0px;
+}
+
+.content-pagination ul.pagination {
+	padding-inline-start: 0px;
+}
+
+.content-pagination ul.pagination li {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.content-pagination ul.pagination li a.page-link {
+	color: #212121;
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	border-radius: 2px;
+	border: 1px solid #EEE;
+	background: #FFF;
+	padding: 6px 12px;
+}
+
+.content-pagination ul.pagination li a.active {
+	color: #FFF;
+	border-radius: 2px;
+	background: #AD120A;
+	border: 1px solid #AD120A;
+}
+
+.content-pagination p.titlepagination {
+	color: #212121;
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	margin-bottom: 8px;
+	line-height: normal;
+}
+
+.isi-card figure {
+	width: 100%;
+	height: 185px;
+	overflow: hidden;
+}
+
+.inner-bannerpemilu {
+	position: relative;
+}
+
+.inner-bannerpemilu .closepolos {
+    background: transparent;
+    border: unset;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.btngetdates {
+    display: inline-block;
+}
+
+.btngetdates .getdatebtn {
+    border: 1px solid #212121;
+    padding: 7px 32px;
+}
+
+.head-banner {
+	background: #fff !important;
+}
+
+/* Batas */
+
+.flex-pemilu {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+	gap: 16px;
+}
+
+.flex-pemilu .flex-1 {
+	flex: 1 1;
+}
+
+.part-one-pemilu figure {
+    width: 174px;
+    height: 174px;
+	text-align: center;
+	margin: auto;
+}
+
+.part-one-pemilu figure img {
+    width: 174px;
+    height: 174px;
+}
+
+.nopaslon p {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.nopaslon {
+    background: #212121;
+    padding: 8px 17px;
+}
+
+.flex-pemilu-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 16px;
+}
+
+.paslon-satu {
+    background: #F0F0F0;
+    height: 48px;
+    padding-top: 12px;
+}
+
+.paslon-satu p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+	color: #212121;
+}
+
+.paslon-dua {
+    background: #7EABE1;
+    height: 48px;
+    padding-top: 12px;
+}
+
+.paslon-dua p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+	color: #212121;
+}
+
+.paslon-tiga {
+    background: #D50000;
+    height: 48px;
+    padding-top: 12px;
+}
+
+.paslon-tiga p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+	color: #212121;
+}
+
+p.title-newpemilu {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #212121;
+}
+
+.blockbox-pemilu {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: center;
+}
+
+.persentotal-satu p {
+    font-family: 'Open Sans';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #212121;
+}
+
+.persentotal-dua p {
+    font-family: 'Open Sans';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7EABE1;
+}
+
+.persentotal-tiga p {
+    font-family: 'Open Sans';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #D50000;
+}
+
+.flex-pemilu-informasi {
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: #AD120A;
+	margin-bottom: 48px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.pemilubanner970x250 img {
+	width: 100%;
+}
+
+.flex-pemilu-informasi div {
+	flex: 1 1;
+}
+
+/* Highchart */
+.highcharts-credits {
+    display: none;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+#container {
+    min-height: 2000px;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.highcharts-exporting-group {
+    display: none;
+}
+
+
+img.bannerkanal-pemilu {
+    width: 100%;
+    margin-bottom: 24px;
+}

@@ -87,70 +87,68 @@
                 style="max-width: 180px"
               />
             </a>
-            <button
-              class="btn btn-sm d-lg-none"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="btn btn-sm d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tentang</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Redaksi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Info Iklan</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Network</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu Jatimtimes</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Redaksi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Info Iklan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Network</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Layanan Lainnya
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">JTN Event</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">JTN Education</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">JTN Marketing</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Kata Kunci"
+                    aria-label="Pencarian"
+                  />
+                  <button
+                    class="btn"
+                    style="background-color: #930930; color: white"
+                    type="submit"
                   >
-                    Layanan Lainnya
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#">JTN Event</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">JTN Education</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">JTN Marketing</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Kata Kunci"
-                  aria-label="Pencarian"
-                />
-                <button
-                  class="btn"
-                  style="background-color: #930930; color: white"
-                  type="submit"
-                >
-                  Search
-                </button>
-              </form>
+                    Search
+                  </button>
+                </form>                
+              </div>
             </div>
           </div>
         </nav>

@@ -93,6 +93,28 @@
                 padding-left: 10px;
             }
         </style>
+
+        <style>
+            .blog-post .post-header {
+                color: #000000;
+            }
+
+            .blog-post .post-body {
+                padding: 0 5px;
+                font-size: 18px;
+            }
+
+            .post-body p {
+                font-size: 18px;
+            }
+
+            .blog-post .post-body img {
+                width: calc(100% + 32px);
+                height: auto;
+                margin: 0px -16px;
+                margin-bottom: 16px;
+            }
+        </style>
     </head>
 
     <body>
@@ -232,54 +254,56 @@
         <!-- ! Breadcrumb -->
 
         <!-- Blog -->
-        <div class="container mt-lg-4 mt-3">
+        <div class="container p-3">
             <div class="row">
                 <!-- Detail berita -->
-                <div class="col-12 col-lg-8">
-                    <!-- Head Berita -->
-                    <img alt="Judul Gambar" src="https://i1.wp.com/risetcdn.jatimtimes.com/images/2024/03/05/Kerja-sama-Bank-Jatim-dengan-Bank-Banten-P1402d385646123b5.md.jpg?quality=50" class="card-img-top img-fluid object-fit-fill rounded" />
-                    <span class="badge bg-primary mt-3">Kategori</span>
-                    <h1>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                        accusamus quia quidem.
-                    </h1>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mt-1">
-                            <small style="font-size: medium">Penulis : Lorem ipsum dolor sit amet.</small>
-                            <br />
-                            <small style="font-size: medium">Editor : Lorem ipsum dolor sit amet.</small>
+                <div class="blog-post col-12 col-lg-8">
+                    <div class="post-header col-12">
+                        <!-- Head Berita -->
+                        <img alt="Judul Gambar" src="https://i1.wp.com/risetcdn.jatimtimes.com/images/2024/03/05/Kerja-sama-Bank-Jatim-dengan-Bank-Banten-P1402d385646123b5.md.jpg?quality=50" class="card-img-top img-fluid object-fit-fill rounded" />
+                        <span class="badge bg-primary mt-3">Kategori</span>
+                        <h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                            accusamus quia quidem.
+                        </h1>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mt-1">
+                                <small style="font-size: medium">Penulis : Lorem ipsum dolor sit amet.</small>
+                                <br />
+                                <small style="font-size: medium">Editor : Lorem ipsum dolor sit amet.</small>
+                            </div>
+                            <div class="col-12 col-lg-6 mt-1">
+                                <small style="font-size: medium;"><i class="bi bi-calendar"></i> Kamis, 5 Maret 2024</small><br />
+                                <a class="btn btn-sm btn-success" target="_blank">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+
+                                <!-- Tombol Share untuk Instagram -->
+                                <a class="btn btn-sm" style="background-color: #d127a4; color: #ededee" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+
+                                <!-- Tombol Share untuk Facebook -->
+                                <a class="btn btn-sm" style="background-color: #4f27d1; color: #ededee" target="_blank">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+
+                                <!-- Tombol Share untuk Tiktok -->
+                                <a class="btn btn-sm btn-dark" target="_blank">
+                                    <i class="bi bi-tiktok"></i>
+                                </a>
+
+                                <!-- Tombol Share untuk Telegram -->
+                                <a class="btn btn-sm btn-danger" target="_blank">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-6 mt-1">
-                            <small class="text-muted"><i class="bi bi-calendar"></i> Kamis, 5 Maret 2024</small><br />
-                            <a class="btn btn-sm btn-success" target="_blank">
-                                <i class="bi bi-whatsapp"></i>
-                            </a>
-
-                            <!-- Tombol Share untuk Instagram -->
-                            <a class="btn btn-sm" style="background-color: #d127a4; color: #ededee" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-
-                            <!-- Tombol Share untuk Facebook -->
-                            <a class="btn btn-sm" style="background-color: #4f27d1; color: #ededee" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-
-                            <!-- Tombol Share untuk Tiktok -->
-                            <a class="btn btn-sm btn-dark" target="_blank">
-                                <i class="bi bi-tiktok"></i>
-                            </a>
-
-                            <!-- Tombol Share untuk Telegram -->
-                            <a class="btn btn-sm btn-danger" target="_blank">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </div>
+                        <!-- !Head Berita -->
                     </div>
-                    <!-- !Head Berita -->
                     <hr>
                     <!-- Isi Berita -->
-                    <div class="col-12 mt-3">
+                    <div class="post-body col-12 mt-3">
                         <p>JATIMTIMES -<a href="https://www.malangtimes.com/tag/festival-anak"> Festival Anak</a> Marhaban Ya Ramadan <a href="https://www.malangtimes.com/tag/piala-kadisporapar-kota-malang">Piala Kadisporapar Kota Malang</a> berlangsung meriah, Minggu (3/3/2024) siang. Sebanyak lima lomba digelar untuk mengisi kegiatan positif anak-anak jelang Ramadan saat ini.&nbsp; </p>
                         <p>Beberapa perlombaan yang digelar di antaranya Menulis Angka, Mewarnai Kaligrafi, Hafalan Surat Pendek, Tahfidz Qur’an dan Telling Story ‘Malang Mbois'. Kelima lomba itu berlangsung meriah.&nbsp; </p>
                         <figure class="image"><img src="https://risetcdn.jatimtimes.com/images/2024/03/03/Para-pemenang-lomba-mewarnai-kaligrafi-foto-bersama-staf-Indomaret-Minggu-332024.-Foto-Binti-N-RosidahJatimTIMES-C9cebdd4ad565e1da.jpg" alt="Para pemenang lomba mewarnai kaligrafi foto bersama staf Indomaret, Minggu (3/3/2024). (Foto: Binti N Rosidah/JatimTIMES)"></figure>
@@ -322,7 +346,7 @@
                         <br>
                         <span style="font-size: 20px;">UPDATE BERITA JATIM TIMES NETWORK</span>
                         <p>
-                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com dengan klik <strong><a href="https://news.google.com/publications/CAAqBwgKMPO4nQswhMO1Aw?hl=id&amp;gl=ID&amp;ceid=ID%3Aid" target="_blank">Langganan Google News Jatimtimes</a></strong> 
+                            Dapatkan update berita pilihan dan breaking news setiap hari dari JatimTIMES.com dengan klik <strong><a href="https://news.google.com/publications/CAAqBwgKMPO4nQswhMO1Aw?hl=id&amp;gl=ID&amp;ceid=ID%3Aid" target="_blank">Langganan Google News Jatimtimes</a></strong>
                     </div>
                     <!-- !Footer Berita -->
                 </div>
@@ -480,7 +504,7 @@
                         </a>
                     </div>
 
-                                        <!-- Iklan Slider Standard -->
+                    <!-- Iklan Slider Standard -->
                     <center class="mt-3">
                         <small>Advetorial Standard</small>
                         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">

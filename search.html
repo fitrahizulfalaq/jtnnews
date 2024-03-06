@@ -1,556 +1,853 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Meta Tags -->
-        <meta name="title" content="Jatimtimes News">
-        <meta name="description" content="Berita Jawa TImur">
-        <meta name="keywords" content="jatimtimes, berita jatim, berita terbaru, media jawa timur">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="Id">
-        <meta name="revisit-after" content="1 days">
-        <meta name="author" content="Jatimtimes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Tags -->
+    <meta name="title" content="Jatimtimes News" />
+    <meta name="description" content="Berita Jawa TImur" />
+    <meta
+      name="keywords"
+      content="jatimtimes, berita jatim, berita terbaru, media jawa timur"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Id" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="Jatimtimes" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://jatimtimes.com" />
-        <meta property="og:title" content="Jatim Times Network" />
-        <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
-        <meta property="og:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jatimtimes.com" />
+    <meta property="og:title" content="Jatim Times Network" />
+    <meta
+      property="og:description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta
+      property="og:image"
+      content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp"
+    />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://jatimtimes.com" />
-        <meta property="twitter:title" content="Jatim Times Network" />
-        <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
-        <meta property="twitter:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jatimtimes.com" />
+    <meta property="twitter:title" content="Jatim Times Network" />
+    <meta
+      property="twitter:description"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp"
+    />
 
-        <!-- !Meta Tags -->
-        <title>JTN News Template</title>
-        <link rel="icon" type="image/png" href="https://risetcdn.jatimtimes.com/images/favicon.ico" sizes="32x32" />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://i1.wp.com/risetcdn.jatimtimes.com/images/favicon-32x32.png" />
-        <!-- Bootstrap CSS -->
-        <link href="./assets/boostrap/bootstrap.min.css" rel="stylesheet" />
-        <!-- Boostrap ICOn -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-        <!-- Custom CSS -->
-        <style>
-            div.scrollmenu {
-                overflow: hidden;
-                overflow-x: auto;
-                white-space: nowrap;
-                height: 48px;
-                margin: 0;
-                padding-left: 2%;
-                padding-right: 2%;
-                padding-bottom: 0;
-                background-color: #f8f9fa;
-                text-align: center;
-                scrollbar-width: 0;
-            }
+    <!-- !Meta Tags -->
+    <title>JTN News Template</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://risetcdn.jatimtimes.com/images/favicon.ico"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://i1.wp.com/risetcdn.jatimtimes.com/images/favicon-32x32.png"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="./assets/boostrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- Boostrap ICOn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      div.scrollmenu {
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        height: 48px;
+        margin: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 0;
+        background-color: #f8f9fa;
+        text-align: center;
+        scrollbar-width: 0;
+      }
 
-            div.scrollmenu a {
-                display: inline-block;
-                color: #5c5555;
-                text-align: center;
-                padding: 5px 12px 0;
-                text-decoration: none;
-            }
+      div.scrollmenu a {
+        display: inline-block;
+        color: #5c5555;
+        text-align: center;
+        padding: 5px 12px 0;
+        text-decoration: none;
+      }
 
-            div.scrollmenu a:hover {
-                color: #ffffff;
-                text-align: center;
-                background-color: #930930;
-                transition: 0.3s;
-            }
+      div.scrollmenu a:hover {
+        color: #ffffff;
+        text-align: center;
+        background-color: #930930;
+        transition: 0.3s;
+      }
 
-            /* width */
-            ::-webkit-scrollbar {
-                width: 10px;
-            }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
 
-            /* Track */
-            ::-webkit-scrollbar-track {
-                background: #f8f9fa;
-            }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f8f9fa;
+      }
 
-            /* Handle */
-            ::-webkit-scrollbar-thumb {
-                background: #f8f9fa;
-                border-radius: 10px;
-            }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #f8f9fa;
+        border-radius: 10px;
+      }
 
-            /* Handle on hover */
-            ::-webkit-scrollbar-thumb:hover {
-                background: #ededee;
-            }
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ededee;
+      }
 
-            /* Mengatur Typografi */
-            .header-title {
-                border-left: 5px solid #930930;
-                padding-left: 10px;
-            }
-        </style>
-    </head>
+      /* Mengatur Typografi */
+      .header-title {
+        border-left: 5px solid #930930;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
 
-    <body>
-        <header class="sticky-top">
-            <div>
-                <nav aria-label="Navigasi Utama" class="navbar navbar-expand-lg navbar-light bg-white p-2 ms-lg-4 me-lg-4 p-lg-4">
-                    <div class="container">
-                        <a class="navbar-brand" href="index.html">
-                            <img class="img-fluid" src="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" alt="Bootstrap" style="max-width: 180px" />
-                        </a>
-                        <button class="btn btn-sm d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                                    Menu Jatimtimes
-                                </h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./page.html">Tentang</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./page.html">Redaksi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./page.html">Info Iklan</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./page.html">Network</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Layanan Lainnya
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li>
-                                                <a class="dropdown-item" href="./page.html">JTN Event</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="./page.html">JTN Education</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="./page.html">JTN Marketing</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Kata Kunci" aria-label="Pencarian" />
-                                    <button class="btn" style="background-color: #930930; color: white" type="submit">
-                                        Search
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+  <body>
+    <header class="sticky-top">
+      <div>
+        <nav
+          aria-label="Navigasi Utama"
+          class="navbar navbar-expand-lg navbar-light bg-white p-2 ms-lg-4 me-lg-4 p-lg-4"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img
+                class="img-fluid"
+                src="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp"
+                alt="Bootstrap"
+                style="max-width: 180px"
+              />
+            </a>
+            <button
+              class="btn btn-sm d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Menu Jatimtimes
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./page.html">Tentang</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./page.html">Redaksi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./page.html">Info Iklan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./page.html">Network</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Layanan Lainnya
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="./page.html"
+                          >JTN Event</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./page.html"
+                          >JTN Education</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./page.html"
+                          >JTN Marketing</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Kata Kunci"
+                    aria-label="Pencarian"
+                  />
+                  <button
+                    class="btn"
+                    style="background-color: #930930; color: white"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
             </div>
-        </header>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-        <div class="scrollmenu">
-            <a href="./search.html">Agama</a>
-            <a href="./search.html">Ekonomi</a>
-            <a href="./search.html">Gaya</a>
-            <a href="./search.html">Hukum dan Kriminalitas</a>
-            <a href="./search.html">Kesehatan</a>
-            <a href="./search.html">Kuliner</a>
-            <a href="./search.html">Olahraga</a>
-            <a href="./search.html">Opini</a>
-            <a href="./search.html">Otomotif</a>
-            <a href="./search.html">Pemerintahan</a>
-            <a href="./search.html">Pendidikan</a>
-            <a href="./search.html">Peristiwa</a>
-            <a href="./search.html">Politik</a>
-            <a href="./search.html">Profil</a>
-            <a href="./search.html">Ruang Mahasiswa</a>
-            <a href="./search.html">Ruang Sastra</a>
-            <a href="./search.html">Selebriti</a>
-            <a href="./search.html">Tekno</a>
-            <a href="./search.html">Transportasi</a>
-            <a href="./search.html">Wisata</a>
-        </div>
-        <!-- * Scroll Nav Menu -->
+    <div class="scrollmenu">
+      <a href="./search.html">Agama</a>
+      <a href="./search.html">Ekonomi</a>
+      <a href="./search.html">Gaya</a>
+      <a href="./search.html">Hukum dan Kriminalitas</a>
+      <a href="./search.html">Kesehatan</a>
+      <a href="./search.html">Kuliner</a>
+      <a href="./search.html">Olahraga</a>
+      <a href="./search.html">Opini</a>
+      <a href="./search.html">Otomotif</a>
+      <a href="./search.html">Pemerintahan</a>
+      <a href="./search.html">Pendidikan</a>
+      <a href="./search.html">Peristiwa</a>
+      <a href="./search.html">Politik</a>
+      <a href="./search.html">Profil</a>
+      <a href="./search.html">Ruang Mahasiswa</a>
+      <a href="./search.html">Ruang Sastra</a>
+      <a href="./search.html">Selebriti</a>
+      <a href="./search.html">Tekno</a>
+      <a href="./search.html">Transportasi</a>
+      <a href="./search.html">Wisata</a>
+    </div>
+    <!-- * Scroll Nav Menu -->
 
-        <!-- Breadcrumb -->
-        <div class="container mt-lg-4 mt-3">
-            <nav aria-label="breadcrumb" class="text-center rounded" style="
+    <!-- Breadcrumb -->
+    <div class="container mt-lg-4 mt-3">
+      <nav
+        aria-label="breadcrumb"
+        class="text-center rounded"
+        style="
           padding-left: 10px;
           padding-right: 10px;
           padding-top: 10px;
           padding-bottom: 0.5px;
-        ">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item" style="font-size: large">
-                        <i class="bi bi-house"></i> Home
-                    </li>
-                    <li class="breadcrumb-item" style="font-size: large">Pencarian</li>
-                    <li class="breadcrumb-item active" aria-current="page" style="font-size: large">
-                        Tags
-                    </li>
-                </ol>
-            </nav>
-        </div>
-        <!-- ! Breadcrumb -->
+        "
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" style="font-size: large">
+            <i class="bi bi-house"></i> Home
+          </li>
+          <li class="breadcrumb-item" style="font-size: large">Pencarian</li>
+          <li
+            class="breadcrumb-item active"
+            aria-current="page"
+            style="font-size: large"
+          >
+            Tags
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!-- ! Breadcrumb -->
 
-        <!-- Blog -->
-        <div class="container mt-lg-4 mt-3">
+    <!-- Blog -->
+    <div class="container mt-lg-4 mt-3">
+      <div class="row">
+        <!-- Hasil Pencarian -->
+        <div class="col-12 col-lg-8">
+          <h2 class="mb-4 header-title">#Pemerintahan</h2>
+          <div class="list-group bg-white">
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Molestias obcaecati pariatur eveniet repellendus quia. Ab,
+                    modi deleniti?
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis blanditiis aut impedit illum.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni unde earum fugit.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+
+            <!-- Artikel -->
+            <a
+              href="./post.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="d-flex w-100">
+                <figure>
+                  <img
+                    src="https://loremflickr.com/500/500"
+                    alt="Artikel 1"
+                    class="me-3 object-fit-fill border rounded"
+                    style="max-width: 90px"
+                  />
+                </figure>
+                <article>
+                  <span class="badge text-bg-primary rounded-pill mb-1"
+                    >Berita</span
+                  >
+                  <h2 class="mb-1" style="font-size: large">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                  </h2>
+                  <small>27 Februari 2024</small>
+                </article>
+              </div>
+            </a>
+            <button class="btn btn-block btn-success mt-3">Load More</button>
+          </div>
+        </div>
+        <!-- !Hasil Pencarian -->
+        <!-- Add Ons Kanan -->
+        <div class="col-12 col-lg-4">
+          <!-- Tags Trending -->
+          <h2 class="header-title mt-lg-4 mt-3">Trending</h2>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span
+                class="me-2"
+                style="font-size: 25px; color: #5c5555; text-align: center"
+                >1</span
+              >
+              <a
+                class="btn btn-outline-danger"
+                href="./search.html"
+                target="_self"
+                >#Pilpres 2024</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span
+                class="me-2"
+                style="font-size: 25px; color: #5c5555; text-align: center"
+                >2</span
+              >
+              <a
+                class="btn btn-outline-danger"
+                href="./search.html"
+                target="_self"
+                >#Prabowo Subianto</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span
+                class="me-2"
+                style="font-size: 25px; color: #5c5555; text-align: center"
+                >3</span
+              >
+              <a
+                class="btn btn-outline-danger"
+                href="./search.html"
+                target="_self"
+                >#Lomba Desa Kabupaten Malang</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span
+                class="me-2"
+                style="font-size: 25px; color: #5c5555; text-align: center"
+                >4</span
+              >
+              <a
+                class="btn btn-outline-danger"
+                href="./search.html"
+                target="_self"
+                >#Desa Terbaik</a
+              >
+            </li>
+            <li class="list-group-item">
+              <span
+                class="me-2"
+                style="font-size: 25px; color: #5c5555; text-align: center"
+                >5</span
+              >
+              <a
+                class="btn btn-outline-danger"
+                href="./search.html"
+                target="_self"
+                >#Jatimtimes Network</a
+              >
+            </li>
+          </ul>
+          <!-- !Tags Trending -->
+          <!-- Iklan Slider Standard -->
+          <center class="mt-3">
+            <small>Advetorial Standard</small>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://pasangiklan.jatimtimes.com/amb/data/dbimg/media/326_0.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    style="max-height: 500px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://pasangiklan.jatimtimes.com/amb/data/dbimg/media/321_0.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    style="max-height: 500px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://pasangiklan.jatimtimes.com/amb/data/dbimg/media/320_0.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    style="max-height: 500px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </center>
+          <!-- !Iklan Slider Standard -->
+        </div>
+
+        <!-- Add Ons Kanan -->
+      </div>
+    </div>
+    <!-- !Blog -->
+
+    <footer class="text-center bg-dark text-white">
+      <div class="container mt-lg-4 mt-3 pt-3">
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png"
+              alt="Logo"
+              height="50"
+            />
             <div class="row">
-                <!-- Hasil Pencarian -->
-                <div class="col-12 col-lg-8">
-                    <h2 class="mb-4 header-title">#Pemerintahan</h2>
-                    <div class="list-group bg-white">
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias obcaecati
-                                        pariatur eveniet repellendus quia. Ab, modi deleniti?
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis aut
-                                        impedit illum.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni unde earum fugit.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-
-                        <!-- Artikel -->
-                        <a href="./post.html" class="list-group-item list-group-item-action">
-                            <div class="d-flex w-100">
-                                <figure>
-                                    <img src="https://loremflickr.com/500/500" alt="Artikel 1" class="me-3 object-fit-fill border rounded" style="max-width: 90px" />
-                                </figure>
-                                <article>
-                                    <span class="badge text-bg-primary rounded-pill mb-1">Berita</span>
-                                    <h2 class="mb-1" style="font-size: large">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing.
-                                    </h2>
-                                    <small>27 Februari 2024</small>
-                                </article>
-                            </div>
-                        </a>
-                        <button class="btn btn-block btn-success mt-3">Load More</button>
-                    </div>
-                </div>
-                <!-- !Hasil Pencarian -->
-                <!-- Add Ons Kanan -->
-                <div class="col-12 col-lg-4">
-                    <!-- Tags Trending -->
-                    <h2 class="header-title mt-lg-4 mt-3">Trending</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <span class="me-2" style="font-size: 25px; color: #5c5555; text-align: center">1</span>
-                            <a class="btn btn-outline-danger" href="./search.html" target="_self">#Pilpres 2024</a>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="me-2" style="font-size: 25px; color: #5c5555; text-align: center">2</span>
-                            <a class="btn btn-outline-danger" href="./search.html" target="_self">#Prabowo Subianto</a>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="me-2" style="font-size: 25px; color: #5c5555; text-align: center">3</span>
-                            <a class="btn btn-outline-danger" href="./search.html" target="_self">#Lomba Desa Kabupaten Malang</a>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="me-2" style="font-size: 25px; color: #5c5555; text-align: center">4</span>
-                            <a class="btn btn-outline-danger" href="./search.html" target="_self">#Desa Terbaik</a>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="me-2" style="font-size: 25px; color: #5c5555; text-align: center">5</span>
-                            <a class="btn btn-outline-danger" href="./search.html" target="_self">#Jatimtimes Network</a>
-                        </li>
-                    </ul>
-                    <!-- !Tags Trending -->
-                    <!-- Iklan Slider Standard -->
-                    <center class="mt-3">
-                        <small>Advetorial Standard</small>
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://pasangiklan.jatimtimes.com/amb/data/dbimg/media/326_0.jpg" class="d-block w-100" alt="..." style="max-height: 500px" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://pasangiklan.jatimtimes.com/amb/data/dbimg/media/321_0.jpg" class="d-block w-100" alt="..." style="max-height: 500px" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://pasangiklan.jatimtimes.com/amb/data/dbimg/media/320_0.jpg" class="d-block w-100" alt="..." style="max-height: 500px" />
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </center>
-                    <!-- !Iklan Slider Standard -->
-                </div>
-
-                <!-- Add Ons Kanan -->
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                <p class="mt-3 text-center">
+                  Media Online Mainstream Pertama di Jawa Timur, menyajikan info
+                  berita Jawa Timur yang membangun, menginspirasi, dan
+                  berpositif thinking berdasarkan jurnalisme positif.
+                </p>
+                <p>
+                  <a
+                    href=""
+                    class="btn btn-outline-secondary"
+                    style="color: #ffffff"
+                  >
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="btn btn-outline-secondary"
+                    style="color: #ffffff"
+                  >
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="btn btn-outline-secondary"
+                    style="color: #ffffff"
+                  >
+                    <i class="bi bi-tiktok"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="btn btn-outline-secondary"
+                    style="color: #ffffff"
+                  >
+                    <i class="bi bi-envelope"></i>
+                  </a>
+                </p>
+                <hr />
+                <small>Run on Android</small>
+                <br />
+                <small>Load time on </small>
+              </div>
+              <div class="col-lg-3"></div>
             </div>
+          </div>
         </div>
-        <!-- !Blog -->
+      </div>
+    </footer>
 
-        <footer class="text-center bg-dark text-white">
-            <div class="container mt-lg-4 mt-3 pt-3">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" alt="Logo" height="50" />
-                        <div class="row">
-                            <div class="col-lg-3"></div>
-                            <div class="col-lg-6">
-                                <p class="mt-3 text-center">
-                                    Media Online Mainstream Pertama di Jawa Timur, menyajikan info
-                                    berita Jawa Timur yang membangun, menginspirasi, dan
-                                    berpositif thinking berdasarkan jurnalisme positif.
-                                </p>
-                                <p>
-                                    <a href="" class="btn btn-outline-secondary" style="color: #ffffff">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                    <a href="" class="btn btn-outline-secondary" style="color: #ffffff">
-                                        <i class="bi bi-youtube"></i>
-                                    </a>
-                                    <a href="" class="btn btn-outline-secondary" style="color: #ffffff">
-                                        <i class="bi bi-tiktok"></i>
-                                    </a>
-                                    <a href="" class="btn btn-outline-secondary" style="color: #ffffff">
-                                        <i class="bi bi-envelope"></i>
-                                    </a>
-                                </p>
-                                <hr />
-                                <small>Run on Android</small>
-                                <br />
-                                <small>Load time on </small>
-                            </div>
-                            <div class="col-lg-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <nav
+      aria-label="Nav Fixed Bottom"
+      class="navbar fixed-bottom navbar-light bg-light"
+      style="background-color: #930930"
+    >
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand" href="#" style="font-size: medium"
+            >Follow JTN Network</a
+          >
+          <a
+            href="https://wa.me/628113787823"
+            class="btn btn-sm btn-success"
+            target="_blank"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a
+            href="https://instagram.com/jatimtimescom"
+            class="btn btn-sm"
+            style="background-color: #d127a4; color: #ededee"
+            target="_blank"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@jatimtimes"
+            class="btn btn-sm btn-dark"
+            target="_blank"
+          >
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a
+            href="https://youtube.com/c/JatimTIMESNetworkOfficialVideos"
+            class="btn btn-sm btn-danger"
+            target="_blank"
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+        <div>
+          <small id="waktuSekarang"></small>
+        </div>
+      </div>
+    </nav>
 
-        <nav aria-label="Nav Fixed Bottom" class="navbar fixed-bottom navbar-light bg-light" style="background-color: #930930">
-            <div class="container-fluid">
-                <div>
-                    <a class="navbar-brand" href="#" style="font-size: medium;">Follow JTN Network</a>
-                    <a href="https://wa.me/628113787823" class="btn btn-sm btn-success" target="_blank">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="https://instagram.com/jatimtimescom" class="btn btn-sm" style="background-color: #d127a4; color: #ededee" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@jatimtimes" class="btn btn-sm btn-dark" target="_blank">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                    <a href="https://youtube.com/c/JatimTIMESNetworkOfficialVideos" class="btn btn-sm btn-danger" target="_blank">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </div>
-                <div>
-                    <small id="waktuSekarang"></small>
-                </div>
-            </div>
-        </nav>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+    <!-- Waktu Sekarang -->
+    <script>
+      function waktuSekarang() {
+        var e = new Date(),
+          t = e.getDate(),
+          a = [
+            "Januari",
+            "Februari",
+            "Maret",
+            "April",
+            "Mei",
+            "Juni",
+            "Juli",
+            "Agustus",
+            "September",
+            "Oktober",
+            "November",
+            "Desember",
+          ][e.getMonth()],
+          r = e.getFullYear(),
+          n = e.getHours(),
+          u = e.getMinutes(),
+          g = e.getSeconds(),
+          $ =
+            (t = (t < 10 ? "0" : "") + t) +
+            " " +
+            a +
+            " " +
+            r +
+            " " +
+            (n = (n < 10 ? "0" : "") + n) +
+            ":" +
+            (u = (u < 10 ? "0" : "") + u) +
+            ":" +
+            (g = (g < 10 ? "0" : "") + g);
+        document.getElementById("waktuSekarang").innerHTML = $;
+      }
+      setInterval(waktuSekarang, 1e3);
+    </script>
+    <!-- !Waktu Sekarang -->
+    <!-- SimpleShareToSocialMedia -->
+    <script>
+      var currentUrl = encodeURIComponent(window.location.href);
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="assets/boostrap/bootstrap.bundle.min.js"></script>
-        <!-- Waktu Sekarang -->
-        <script>
-            function waktuSekarang() {
-                var e = new Date(),
-                    t = e.getDate(),
-                    a = [
-                        "Januari",
-                        "Februari",
-                        "Maret",
-                        "April",
-                        "Mei",
-                        "Juni",
-                        "Juli",
-                        "Agustus",
-                        "September",
-                        "Oktober",
-                        "November",
-                        "Desember",
-                    ][e.getMonth()],
-                    r = e.getFullYear(),
-                    n = e.getHours(),
-                    u = e.getMinutes(),
-                    g = e.getSeconds(),
-                    $ =
-                        (t = (t < 10 ? "0" : "") + t) +
-                        " " +
-                        a +
-                        " " +
-                        r +
-                        " " +
-                        (n = (n < 10 ? "0" : "") + n) +
-                        ":" +
-                        (u = (u < 10 ? "0" : "") + u) +
-                        ":" +
-                        (g = (g < 10 ? "0" : "") + g);
-                document.getElementById("waktuSekarang").innerHTML = $;
-            }
-            setInterval(waktuSekarang, 1e3);
-        </script>
-        <!-- !Waktu Sekarang -->
-        <!-- SimpleShareToSocialMedia -->
-        <script>
-            var currentUrl = encodeURIComponent(window.location.href);
+      function shareToWhatsApp() {
+        window.open("https://wa.me/?text=" + currentUrl);
+      }
 
-            function shareToWhatsApp() {
-                window.open("https://wa.me/?text=" + currentUrl);
-            }
+      function shareToTelegram() {
+        window.open(
+          "https://telegram.me/share/url?url=" + currentUrl + "&text="
+        );
+      }
 
-            function shareToTelegram() {
-                window.open(
-                    "https://telegram.me/share/url?url=" + currentUrl + "&text="
-                );
-            }
+      function shareToFacebook() {
+        window.open(
+          "https://www.facebook.com/sharer/sharer.php?u=" + currentUrl
+        );
+      }
 
-            function shareToFacebook() {
-                window.open(
-                    "https://www.facebook.com/sharer/sharer.php?u=" + currentUrl
-                );
-            }
-
-            function shareToEmail() {
-                var subject = encodeURIComponent("Artikel dari Jatimtimes.com");
-                var body = encodeURIComponent(
-                    "Halo,\n\nCek artikel dari Jatimtimes.com berikut ini:\n" +
-                    window.location.href
-                );
-                window.location.href = "mailto:?subject=" + subject + "&body=" + body;
-            }
-        </script>
-        <!-- SimpleShareToSocialMedia -->
-    </body>
+      function shareToEmail() {
+        var subject = encodeURIComponent("Artikel dari Jatimtimes.com");
+        var body = encodeURIComponent(
+          "Halo,\n\nCek artikel dari Jatimtimes.com berikut ini:\n" +
+            window.location.href
+        );
+        window.location.href = "mailto:?subject=" + subject + "&body=" + body;
+      }
+    </script>
+    <!-- SimpleShareToSocialMedia -->
+  </body>
 </html>

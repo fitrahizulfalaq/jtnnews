@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Meta Tags -->
+        <meta name="title" content="Jatimtimes News" />
+        <meta name="description" content="Berita Jawa TImur" />
+        <meta name="keywords" content="jatimtimes, berita jatim, berita terbaru, media jawa timur" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="Id" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="author" content="Jatimtimes" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jatimtimes.com" />
+        <meta property="og:title" content="Jatim Times Network" />
+        <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+        <meta property="og:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jatimtimes.com" />
+        <meta property="twitter:title" content="Jatim Times Network" />
+        <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+        <meta property="twitter:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" />
+
+        <!-- !Meta Tags -->
+        <title>JTN News Template</title>
+        <link rel="icon" type="image/png" href="https://risetcdn.jatimtimes.com/images/favicon.ico" sizes="32x32" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://risetcdn.jatimtimes.com/images/favicon-32x32.png" />
+        <!-- Bootstrap CSS -->
+        <link href="./assets/boostrap/bootstrap.min.css" rel="stylesheet" />
+        <!-- Boostrap ICOn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <!-- Select2 -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <!-- Summer Note -->
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="dashboard.html">
+                    <img class="img-fluid" src="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" alt="Bootstrap" style="max-width: 180px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasLightNavbar" aria-labelledby="offcanvasLightNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-plus-square"></i> Tambah Berita</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-card-checklist"></i> Daftar Berita</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-bar-chart"></i> Statistik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-sliders"></i> Pengaturan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" href="#"><i class="bi bi-box-arrow-left"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <a href="./dashboard.html" class="btn btn-secondary btn-sm float-end"><i class="bi bi-arrow-left"></i> Kembali</a>
+            <h3>Tambah berita</h3>
+            <hr />
+            <form action="">
+                <div class="mt-4">
+                    <select id="kategori" name="kategori" class="form-select select2" aria-label="Kategori">
+                        <option selected>Kategori</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="form-floating mt-4">
+                    <input type="text" class="form-control" id="judul" name="judul" placeholder="Judul" required />
+                    <label for="Judul">Judul</label>
+                    <small class="float-end">Jumlah : <span id="title_count"></span> Karakter /
+                        <span id="title_words"></span> Kata
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <label for="Judul" class="h6">Thubnail Berita</label>
+                    <input type="file" class="form-control" aria-label="file example" required />
+                    <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <strong>Kriteria</strong> Minimal dimensi gambar 650x650.
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <label for="caption_gambar" class="form-label h6">Caption Gambar</label>
+                    <textarea class="form-control" id="caption_gambar" name="caption_gambar" rows="5" placeholder="Masukkan caption sesuai gambar thumbail. Usahakan tidak terlalu panjang, cukup: singkat, padat, dan jelas" required></textarea>
+                    <small class="float-end">Jumlah : <span id="caption_gambar_count"></span> Karakter /
+                        <span id="caption_gambar_words"></span> Kata
+                    </small>
+                </div>
+
+                <div class="mt-4">
+                    <label for="note" class="form-label h6">Catatan untuk Editor</label>
+                    <textarea class="form-control" name="note" id="note" rows="5" placeholder="Masukkan Catatan untuk Editor"></textarea>
+                </div>
+
+                <hr />
+
+                <div id="summernote" class="mt-4"></div>
+
+                <div id="editor" class="mt-4"></div>
+
+            </form>
+        </div>
+
+        <script>
+            // Get the textarea element and count span element
+            var judul = document.getElementById("judul");
+            var caption_gambar = document.getElementById("caption_gambar");
+            var title_count = document.getElementById("title_count");
+
+            // Add event listener to the textarea for input changes
+            judul.addEventListener("input", function () {
+                var text = judul.value;
+                var characters = text.length;
+                var words = text.split(/\s+/).filter(function (word) {
+                    return word.length > 0;
+                }).length;
+                title_count.innerText = characters;
+                title_words.innerText = words;
+            });
+
+            caption_gambar.addEventListener("input", function () {
+                var text = caption_gambar.value;
+                var characters = text.length;
+                var words = text.split(/\s+/).filter(function (word) {
+                    return word.length > 0;
+                }).length;
+                caption_gambar_count.innerText = characters;
+                caption_gambar_words.innerText = words;
+            });
+        </script>
+
+        <footer class="text-center bg-dark text-white">
+            <div class="container mt-3 pt-1">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" alt="Logo" height="50" />
+                        <br />
+                        <small>New Version &copy; 2024 | Tim IT JTN</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <script src="./assets/summernote/summernote-cleaner.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".select2").select2();
+        });
+    </script>
+    <script>
+        $("#summernote").summernote({
+            placeholder: "Masukkan berita disini. Pastikan setelah paste Clear Format terlebih dahulu.",
+            tabsize: 2,
+            height: 500,
+            toolbar: [
+                ["style", ["style"]],
+                ["font", ["bold", "underline", "clear"]],
+                ["color", ["color"]],
+                ["para", ["ul", "ol", "paragraph"]],
+                ["table", ["table"]],
+                ["insert", ["link", "picture", "video"]],
+                ["view", ["fullscreen", "codeview", "help"]],
+            ],
+            onPaste: function (e) {
+                var bufferText = (
+                    (e.originalEvent || e).clipboardData || window.clipboardData
+                ).getData("Text");
+                e.preventDefault();
+                document.execCommand("insertText", false, bufferText);
+            },
+            cleaner: {
+                action: "both", // both|button|paste 'button' only cleans via toolbar button, 'paste' only clean when pasting content, both does both options.
+                icon: '<i class="note-icon"><svg xmlns="http://www.w3.org/2000/svg" id="libre-paintbrush" viewBox="0 0 14 14" width="14" height="14"><path d="m 11.821425,1 q 0.46875,0 0.82031,0.311384 0.35157,0.311384 0.35157,0.780134 0,0.421875 -0.30134,1.01116 -2.22322,4.212054 -3.11384,5.035715 -0.64956,0.609375 -1.45982,0.609375 -0.84375,0 -1.44978,-0.61942 -0.60603,-0.61942 -0.60603,-1.469866 0,-0.857143 0.61608,-1.419643 l 4.27232,-3.877232 Q 11.345985,1 11.821425,1 z m -6.08705,6.924107 q 0.26116,0.508928 0.71317,0.870536 0.45201,0.361607 1.00781,0.508928 l 0.007,0.475447 q 0.0268,1.426339 -0.86719,2.32366 Q 5.700895,13 4.261155,13 q -0.82366,0 -1.45982,-0.311384 -0.63616,-0.311384 -1.0212,-0.853795 -0.38505,-0.54241 -0.57924,-1.225446 -0.1942,-0.683036 -0.1942,-1.473214 0.0469,0.03348 0.27455,0.200893 0.22768,0.16741 0.41518,0.29799 0.1875,0.130581 0.39509,0.24442 0.20759,0.113839 0.30804,0.113839 0.27455,0 0.3683,-0.247767 0.16741,-0.441965 0.38505,-0.753349 0.21763,-0.311383 0.4654,-0.508928 0.24776,-0.197545 0.58928,-0.31808 0.34152,-0.120536 0.68974,-0.170759 0.34821,-0.05022 0.83705,-0.07031 z"/></svg></i>',
+                keepHtml: true,
+                // keepTagContents: ["span"], //Remove tags and keep the contents
+                badTags: [
+                    "applet",
+                    "col",
+                    "colgroup",
+                    "embed",
+                    "noframes",
+                    "noscript",
+                    "script",
+                    "style",
+                    "title",
+                    "meta",
+                    "link",
+                    "head",
+                    "span",
+                ], //Remove full tags with contents
+                badAttributes: [
+                    "bgcolor",
+                    "border",
+                    "height",
+                    "cellpadding",
+                    "cellspacing",
+                    "lang",
+                    "start",
+                    "style",
+                    "valign",
+                    "width",
+                    "data-(.*?)",
+                ], //Remove attributes from remaining tags
+                limitChars: 0, // 0|# 0 disables option
+                limitDisplay: "both", // none|text|html|both
+                limitStop: false, // true/false
+                limitType: "text", // text|html
+                notTimeOut: 850, //time before status message is hidden in miliseconds
+                keepImages: true, // if false replace with imagePlaceholder
+                imagePlaceholder: "https://via.placeholder.com/200",
+            },
+            codeviewFilter: false,
+            codeviewIframeFilter: true
+        });
+    </script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+    <!-- Beauty JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-html.min.js"></script>
+
+</html>

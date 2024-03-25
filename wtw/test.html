@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menjumlahkan Nilai Kolom Tabel</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<table id="myTable">
+    <thead>
+        <tr>
+            <th>Nilai 1</th>
+            <th>Nilai 2</th>
+            <th>Hasil</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>10</td>
+            <td>20</td>
+            <td><span id="val_1"></span></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>25</td>
+            <td><span id="val_2"></span></td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    var table = document.getElementById("myTable");
+    var sumVal_1 = 0;
+    var sumVal_2 = 0;
+    for(var i = 0; i < table.rows[0].cells.length - 1; i++)
+    {
+        sumVal_1 = sumVal_1 + parseInt(table.rows[1].cells[i].innerHTML);
+        sumVal_2 = sumVal_2 + parseInt(table.rows[2].cells[i].innerHTML);
+    }
+    document.getElementById("val_1").innerHTML = sumVal_1;
+    document.getElementById("val_2").innerHTML = sumVal_2;
+</script>
+
+</body>
+</html>

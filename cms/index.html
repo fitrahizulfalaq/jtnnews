@@ -95,12 +95,12 @@
         </style>
     </head>
 
-    <body style="background-color: #6bb6ff;">
+    <body style="background-color: cornsilk;">
         <div class="container position-absolute top-50 start-50 translate-middle">
             <form>
                 <img class="mb-4" src="https://i1.wp.com/cdnstatic.jatimtimes.com/logo/new/jatim.webp" alt="" width="200">
                 <hr>
-                <h1 class="mb-3 fw-bold">Wartawan Portal</h1>
+                <h1 class="mb-3 fw-bold">CMS Portal</h1>
                 <h3>Jatimtimes Network</h3>
                 <div class="form-floating mt-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="fitrah@jatimtimes.com">
@@ -115,7 +115,7 @@
                     <label class="form-check-label" for="gridCheck1">Tampilkan Password</label>
                 </div>
                 <!-- <button class="w-100 btn btn-lg btn-primary mt-4" type="submit">Login</button> -->
-                <a href="./dashboard.html" class="w-100 btn btn-lg btn-warning mt-4" type="submit">Login</a> 
+                <a href="./dashboard.html" class="w-100 btn btn-lg btn-primary mt-4" type="submit">Login</a>
                 <div class="float-end mt-3">
                     <a href="https://wa.me/+6281234381239" class="text-muted">Klik untuk lupa password</a>
                 </div>
@@ -123,8 +123,8 @@
             <script>
                 const checkbox = document.getElementById('gridCheck1');
                 const passwordField = document.querySelector('#floatingPassword');
-                
-                checkbox.addEventListener('change', function() {
+
+                checkbox.addEventListener('change', function () {
                     if (this.checked) {
                         passwordField.setAttribute('type', 'text');
                     } else {

@@ -43,7 +43,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-light sticky-top" style="background-color: rgb(255, 224, 193);">
             <div class="container">
                 <a class="navbar-brand" href="dashboard.html">
                     <img class="img-fluid" src="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" alt="Bootstrap" style="max-width: 180px" />
@@ -59,22 +59,51 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                                <a class="nav-link active" aria-current="page" href="./dashboard.html"><i class="bi bi-house"></i> Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-plus-square"></i> Tambah Berita</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-newspaper"></i> Berita
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./all.html"><i class="bi bi-newspaper"></i> Seluruh Berita</a></li>
+                                    <li><a class="dropdown-item" href="./draft.html"><i class="bi bi-hourglass-bottom"></i> Draft Berita</a></li>
+                                    <li><a class="dropdown-item" href="./tambah.html"><i class="bi bi-plus-square"></i> Tambah berita</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-card-checklist"></i> Daftar Berita</a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./menu_konfigurasi.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-gear"></i> Konfigurasi Menu
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./lapsus.html"><i class="bi bi-view-list"></i> Laporan Khusus</a></li>
+                                    <li><a class="dropdown-item" href="./fokus.html"><i class="bi bi-view-list"></i> Fokus</a></li>
+                                    <li><a class="dropdown-item" href="./kategori.html"><i class="bi bi-view-list"></i> Kategori</a></li>
+                                    <li><a class="dropdown-item" href="./tags.html"><i class="bi bi-view-list"></i> Tags</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-bar-chart"></i> Statistik</a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./statistik.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-bar-chart"></i> Statistik
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pencapaian_berita.html"><i class="bi bi-bar-chart-line"></i> Pencapaian Berita</a></li>
+                                    <li><a class="dropdown-item" href="./pencapaian_wartawan.html"><i class="bi bi-bar-chart-line"></i> Pencapaian Wartawan</a></li>
+                                </ul>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-sliders"></i> Pengaturan</a>
+                                <a class="nav-link" aria-current="page" href="./menu_tools.html"><i class="bi bi-google"></i> Tools Seo</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link text-danger" href="#"><i class="bi bi-box-arrow-left"></i> Log Out</a>
+                                <a class="nav-link" aria-current="page" href="./iklan.html"><i class="bi bi-journal-text"></i> Iklan</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" href="./index.html"><i class="bi bi-box-arrow-left"></i> Log Out</a>
                             </li>
                         </ul>
                     </div>

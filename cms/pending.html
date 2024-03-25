@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Meta Tags -->
+        <meta name="title" content="Jatimtimes News">
+        <meta name="description" content="Berita Jawa TImur">
+        <meta name="keywords" content="jatimtimes, berita jatim, berita terbaru, media jawa timur">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="Id">
+        <meta name="revisit-after" content="1 days">
+        <meta name="author" content="Jatimtimes">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jatimtimes.com" />
+        <meta property="og:title" content="Jatim Times Network" />
+        <meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+        <meta property="og:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jatimtimes.com" />
+        <meta property="twitter:title" content="Jatim Times Network" />
+        <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+        <meta property="twitter:image" content="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" />
+
+        <!-- !Meta Tags -->
+        <title>JTN News Template</title>
+        <link rel="icon" type="image/png" href="https://risetcdn.jatimtimes.com/images/favicon.ico" sizes="32x32" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://risetcdn.jatimtimes.com/images/favicon-32x32.png" />
+        <!-- Bootstrap CSS -->
+        <link href="./assets/boostrap/bootstrap.min.css" rel="stylesheet" />
+        <!-- Boostrap ICOn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light sticky-top" style="background-color: rgb(255, 224, 193);">
+            <div class="container">
+                <a class="navbar-brand" href="dashboard.html">
+                    <img class="img-fluid" src="https://cdnstatic.jatimtimes.com/logo/new/jatim.webp" alt="Bootstrap" style="max-width: 180px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasLightNavbar" aria-labelledby="offcanvasLightNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./dashboard.html"><i class="bi bi-house"></i> Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-newspaper"></i> Berita
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./all.html"><i class="bi bi-newspaper"></i> Seluruh Berita</a></li>
+                                    <li><a class="dropdown-item" href="./draft.html"><i class="bi bi-hourglass-bottom"></i> Draft Berita</a></li>
+                                    <li><a class="dropdown-item" href="./tambah.html"><i class="bi bi-plus-square"></i> Tambah berita</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./menu_konfigurasi.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-gear"></i> Konfigurasi Menu
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./lapsus.html"><i class="bi bi-view-list"></i> Laporan Khusus</a></li>
+                                    <li><a class="dropdown-item" href="./fokus.html"><i class="bi bi-view-list"></i> Fokus</a></li>
+                                    <li><a class="dropdown-item" href="./kategori.html"><i class="bi bi-view-list"></i> Kategori</a></li>
+                                    <li><a class="dropdown-item" href="./tags.html"><i class="bi bi-view-list"></i> Tags</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./statistik.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-bar-chart"></i> Statistik
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pencapaian_berita.html"><i class="bi bi-bar-chart-line"></i> Pencapaian Berita</a></li>
+                                    <li><a class="dropdown-item" href="./pencapaian_wartawan.html"><i class="bi bi-bar-chart-line"></i> Pencapaian Wartawan</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./menu_tools.html"><i class="bi bi-google"></i> Tools Seo</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./iklan.html"><i class="bi bi-journal-text"></i> Iklan</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" href="./index.html"><i class="bi bi-box-arrow-left"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <a href="./dashboard.html" class="btn btn-secondary btn-sm float-end"><i class="bi bi-arrow-left"></i> Kembali</a>
+            <h3>Berita Pending Hari Ini</h3>
+            <hr>
+            <div class="table-responsive">
+                <table class="table caption-top">
+                    <caption class="h4 pb-2 mb-4 text-danger border-bottom border-danger">Pending Hari Ini</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Wartawan</th>
+                            <th scope="col">Judul</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 Days ago</td>
+                            <td>Mutmainah J</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur ipsa minus, libero fuga molestiae.</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anang Bassso</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, at cumque.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td><span class="badge rounded-pill text-bg-warning">On Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anggara</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nobis ea quas ipsum, vero placeat repellendus.</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>2 Days ago</td>
+                            <td>Mutmainah J</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur ipsa minus, libero fuga molestiae.</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anang Bassso</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, at cumque.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td><span class="badge rounded-pill text-bg-warning">On Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>2 Days ago</td>
+                            <td>Mutmainah J</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur ipsa minus, libero fuga molestiae.</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anang Bassso</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, at cumque.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td><span class="badge rounded-pill text-bg-warning">On Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anang Bassso</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, at cumque.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td><span class="badge rounded-pill text-bg-warning">On Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anggara</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nobis ea quas ipsum, vero placeat repellendus.</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>2 Days ago</td>
+                            <td>Mutmainah J</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur ipsa minus, libero fuga molestiae.</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anang Bassso</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, at cumque.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td><span class="badge rounded-pill text-bg-warning">On Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>2 Days ago</td>
+                            <td>Mutmainah J</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur ipsa minus, libero fuga molestiae.</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur.</td>
+                            <td><a href="./edit.html" class="btn btn-success"><i class="bi bi-patch-check"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>1 Hours Ago</td>
+                            <td>Anang Bassso</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, at cumque.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td><span class="badge rounded-pill text-bg-warning">On Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+        </div>
+
+        <footer class="text-center bg-dark text-white">
+            <div class="container mt-3 pt-1">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://risetcdn.jatimtimes.com/images/2021/10/22/Logo1-verif-jt-dp2x1bd16774bef5bb63.png" alt="Logo" height="50" />
+                        <br>
+                        <small>New Version &copy; 2024 | Tim IT JTN</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="assets/boostrap/bootstrap.bundle.min.js"></script>
+</html>

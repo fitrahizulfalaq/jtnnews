@@ -3,54 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menjumlahkan Nilai Kolom Tabel</title>
+<title>HTML Cleaner</title>
+<link rel="stylesheet" href="styles.css">
 <style>
-    table {
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 </style>
 </head>
 <body>
+  <header>
+    <h1>HTML Cleaner</h1>
+  </header>
+  <div class="container">
+    <textarea id="input" placeholder="Masukkan kode HTML di sini..."></textarea>
+    <button id="cleanButton">Clean HTML</button>
+    <textarea id="output" placeholder="HTML bersih akan muncul di sini..." readonly></textarea>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('cleanButton').addEventListener('click', function() {
+  var inputHtml = document.getElementById('input').value;
+  var outputHtml = cleanHtml(inputHtml);
+  document.getElementById('output').value = outputHtml;
+});
 
-<table id="myTable">
-    <thead>
-        <tr>
-            <th>Nilai 1</th>
-            <th>Nilai 2</th>
-            <th>Hasil</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>10</td>
-            <td>20</td>
-            <td><span id="val_1"></span></td>
-        </tr>
-        <tr>
-            <td>15</td>
-            <td>25</td>
-            <td><span id="val_2"></span></td>
-        </tr>
-    </tbody>
-</table>
-<script>
-    var table = document.getElementById("myTable");
-    var sumVal_1 = 0;
-    var sumVal_2 = 0;
-    for(var i = 0; i < table.rows[0].cells.length - 1; i++)
-    {
-        sumVal_1 = sumVal_1 + parseInt(table.rows[1].cells[i].innerHTML);
-        sumVal_2 = sumVal_2 + parseInt(table.rows[2].cells[i].innerHTML);
-    }
-    document.getElementById("val_1").innerHTML = sumVal_1;
-    document.getElementById("val_2").innerHTML = sumVal_2;
-</script>
+function cleanHtml(html) {
+  var doc = new DOMParser().parseFromString(html, 'text/html');
+  return doc.documentElement.outerHTML;
+}
 
-
+  </script>
 </body>
 </html>
